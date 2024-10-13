@@ -98,7 +98,7 @@ TDV.PlayerAPI.defineScript({ "definitions": [
       },
       "hfov": 28.09,
       "blending": 0.02,
-      "click": "this.openLink(\"http://ivan933.github.io/Abandoned\", \"_blank\"); this.setComponentVisibility(this.IconButton_90B4E056_86BD_6ED1_41C7_B19C3A09D579, false, 0, null, null, false); this.setComponentVisibility(this.IconButton_90B4E056_86BD_6ED1_41C7_B19C3A09D579, true, 1000, null, 'showEffect', false)",
+      "click": "this.openLink(\"https://ivan933.github.io/Abandoned\", \"_blank\")",
       "useHandCursor": true
      }
     ],
@@ -178,7 +178,7 @@ TDV.PlayerAPI.defineScript({ "definitions": [
     "media": "this.panorama_7B84A99F_77A9_261D_41C5_D0870517A6E9",
     "class": "PanoramaPlayListItem",
     "begin": "this.registerKey('visibility_IconButton_90B4E056_86BD_6ED1_41C7_B19C3A09D579', this.IconButton_90B4E056_86BD_6ED1_41C7_B19C3A09D579.get('visible')); this.setComponentVisibility(this.IconButton_90B4E056_86BD_6ED1_41C7_B19C3A09D579, true, -1, this.effect_9FD31ECF_875D_13CF_41E0_256C1491872A, 'showEffect', false)",
-    "end": "if(this.existsKey('visibility_IconButton_90B4E056_86BD_6ED1_41C7_B19C3A09D579')){ if(this.getKey('visibility_IconButton_90B4E056_86BD_6ED1_41C7_B19C3A09D579')) { this.setComponentVisibility(this.IconButton_90B4E056_86BD_6ED1_41C7_B19C3A09D579, true, -1, this.effect_91ED6DF6_875D_71D1_419D_14A99A6481A7, 'showEffect', false); } else { this.setComponentVisibility(this.IconButton_90B4E056_86BD_6ED1_41C7_B19C3A09D579, false, -1, this.effect_9FD34ECF_875D_13CF_418E_A6EF8C36CB94, 'hideEffect', false); } }; this.unregisterKey('visibility_IconButton_90B4E056_86BD_6ED1_41C7_B19C3A09D579'); this.trigger('tourEnded')"
+    "end": "if(this.existsKey('visibility_IconButton_90B4E056_86BD_6ED1_41C7_B19C3A09D579')){ if(this.getKey('visibility_IconButton_90B4E056_86BD_6ED1_41C7_B19C3A09D579')) { this.setComponentVisibility(this.IconButton_90B4E056_86BD_6ED1_41C7_B19C3A09D579, true, -1, this.effect_9FC5E62D_874B_1273_41D0_38EE4AC9FED3, 'showEffect', false); } else { this.setComponentVisibility(this.IconButton_90B4E056_86BD_6ED1_41C7_B19C3A09D579, false, -1, this.effect_9FD34ECF_875D_13CF_418E_A6EF8C36CB94, 'hideEffect', false); } }; this.unregisterKey('visibility_IconButton_90B4E056_86BD_6ED1_41C7_B19C3A09D579'); this.trigger('tourEnded')"
    }
   ]
  },
@@ -206,14 +206,14 @@ TDV.PlayerAPI.defineScript({ "definitions": [
  },
  {
   "class": "PlayList",
-  "id": "playList_91ECEDF4_875D_71D1_41D9_34B3A955B1F6",
+  "id": "playList_9FC7962B_874B_1277_4164_62834593739E",
   "items": [
    {
     "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer)",
     "media": "this.video_910BBB01_86CB_3233_41D9_45CC8D1BC08D",
     "class": "VideoPlayListItem",
     "player": "this.MainViewerVideoPlayer",
-    "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_91ECEDF4_875D_71D1_41D9_34B3A955B1F6, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_91ECEDF4_875D_71D1_41D9_34B3A955B1F6, 0, this.video_910BBB01_86CB_3233_41D9_45CC8D1BC08D)"
+    "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_9FC7962B_874B_1277_4164_62834593739E, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_9FC7962B_874B_1277_4164_62834593739E, 0, this.video_910BBB01_86CB_3233_41D9_45CC8D1BC08D)"
    }
   ]
  },
@@ -226,7 +226,7 @@ TDV.PlayerAPI.defineScript({ "definitions": [
  {
   "duration": 1000,
   "class": "FadeInEffect",
-  "id": "effect_91ED6DF6_875D_71D1_419D_14A99A6481A7",
+  "id": "effect_9FC5E62D_874B_1273_41D0_38EE4AC9FED3",
   "easing": "cubic_in_out"
  },
  {
