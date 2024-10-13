@@ -98,7 +98,7 @@ TDV.PlayerAPI.defineScript({ "definitions": [
       },
       "hfov": 28.09,
       "blending": 0.02,
-      "click": "this.openLink(\"http://ivan933.github.io/Abandoned\", \"_top\")",
+      "click": "this.openLink(\"http://ivan933.github.io/Abandoned\", \"_blank\")",
       "useHandCursor": true
      }
     ],
@@ -205,14 +205,14 @@ TDV.PlayerAPI.defineScript({ "definitions": [
  },
  {
   "class": "PlayList",
-  "id": "playList_90444490_86BB_F651_41D0_81839C7665F9",
+  "id": "playList_90A0B62C_874D_1271_41B4_FBB39DEB04DA",
   "items": [
    {
     "begin": "this.fixTogglePlayPauseButton(this.MainViewerVideoPlayer)",
     "media": "this.video_910BBB01_86CB_3233_41D9_45CC8D1BC08D",
     "class": "VideoPlayListItem",
     "player": "this.MainViewerVideoPlayer",
-    "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_90444490_86BB_F651_41D0_81839C7665F9, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_90444490_86BB_F651_41D0_81839C7665F9, 0, this.video_910BBB01_86CB_3233_41D9_45CC8D1BC08D)"
+    "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_90A0B62C_874D_1271_41B4_FBB39DEB04DA, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_90A0B62C_874D_1271_41B4_FBB39DEB04DA, 0, this.video_910BBB01_86CB_3233_41D9_45CC8D1BC08D)"
    }
   ]
  },
@@ -336,7 +336,7 @@ TDV.PlayerAPI.defineScript({ "definitions": [
   "paddingTop": 0,
   "propagateClick": false,
   "transparencyActive": false,
-  "right": "5.12%",
+  "right": "6.3%",
   "width": 35,
   "height": 23,
   "mode": "push",
@@ -350,7 +350,7 @@ TDV.PlayerAPI.defineScript({ "definitions": [
   "paddingLeft": 0,
   "paddingRight": 0,
   "cursor": "hand",
-  "bottom": "7.5%",
+  "bottom": "12.15%",
   "id": "IconButton_90B4E056_86BD_6ED1_41C7_B19C3A09D579",
   "maxHeight": 23,
   "maxWidth": 35,
