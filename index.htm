@@ -8,7 +8,7 @@
     <meta name="viewport" content="user-scalable=no, initial-scale=0.5, width=device-width, viewport-fit=cover" />
     
     <script src="lib/tdvplayer.js"></script>
-    <script src="script.js?v=1728839095250"></script>
+    <script src="script.js?v=1728841745910"></script>
     <script src="lib/ThreeWebGL.js"></script>
     <script type="text/javascript">
         var player;
@@ -45,7 +45,7 @@
             var settings = new TDV.PlayerSettings();
             
             settings.set(TDV.PlayerSettings.CONTAINER, document.getElementById('viewer'));
-            settings.set(TDV.PlayerSettings.SCRIPT_URL, 'script.js?v=1728839095250');
+            settings.set(TDV.PlayerSettings.SCRIPT_URL, 'script.js?v=1728841745910');
             settings.set(TDV.PlayerSettings.FLASH_EXPRESS_INSTALLER_URL, 'lib/ExpressInstall.swf');
             settings.set(TDV.PlayerSettings.FLASH_AUDIO_PLAYER_URL, 'lib/AudioPlayer.swf');
             settings.set(TDV.PlayerSettings.FLASH_PANORAMA_PLAYER_URL, 'lib/PanoramaRenderer.swf');
@@ -203,8 +203,9 @@
                 return;
             }
 
-            showPreloader();
-loadTour()
+            document.body.addEventListener("click", onBodyClick);
+document.body.addEventListener("touchend", onBodyClick);
+showPreloader()
         }
 
         function playVideo(video) {
@@ -257,13 +258,13 @@ loadTour()
     <style type="text/css">
         html, body { background-color: #000000;  width: 100%; height: 100%; margin: 0; padding: 0; padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left); }
 
-        #viewer { background-color: #000000; z-index:1; position:absolute; width: 100%; height: 100%; top: 0; }
+        #viewer { background-color: #FFFFFF; z-index:1; position:absolute; width: 100%; height: 100%; top: 0; }
         #preloadContainer { z-index:2; position:relative; width:100%; height:100%; transition: opacity 1s; -webkit-transition: opacity 1s; -moz-transition: opacity 1s; -o-transition: opacity 1s;}
     </style>
     
 </head>
 <body onload="onLoad()">
-    <div id="preloadContainer" style="background-color:rgba(0,0,0,1)"><div style="z-index: 4; position: absolute; background-image: url('loading/HTMLImage_892DD1B6_86CD_2E51_41D4_E9AD1960FD86.gif'); background-size: contain; background-repeat: no-repeat; background-position: center center; overflow: hidden; right: 29.569377990430617%; bottom: 16.022099447513813%; width: 39.87%; height: 69.06%"></div></div>
+    <div id="preloadContainer" style="background-color:rgba(0,0,0,1)"><div style="z-index: 4; position: absolute; background-image: url('loading/HTMLImage_93778C3B_86C5_1657_41CB_F667FAB93B06.gif'); background-size: contain; background-repeat: no-repeat; background-position: center center; overflow: hidden; right: 32.185007974481664%; bottom: 13.259668508287294%; width: 39.87%; height: 69.06%"></div></div>
     <div id="viewer"></div>
 </body>
 </html>
